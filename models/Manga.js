@@ -25,6 +25,6 @@ let schema = new mongoose.Schema({
 
 let collection = 'mangas';
 
-let manga = mongoose.model(schema, collection);
+let manga = mongoose.model(collection, schema);
 
 export default manga;

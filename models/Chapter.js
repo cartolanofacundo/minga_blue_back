@@ -16,6 +16,6 @@ let schema = new mongoose.Schema({
 
 let collection = 'chapters';
 
-let chapter = mongoose.model(schema, collection);
+let chapter = mongoose.model(collection, schema);
 
 export default chapter;

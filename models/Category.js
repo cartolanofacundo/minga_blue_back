@@ -13,6 +13,6 @@ let schema = new mongoose.Schema({
 
 let collection = 'categories';
 
-let category = mongoose.model(schema, collection);
+let category = mongoose.model(collection, schema);
 
 export default category;

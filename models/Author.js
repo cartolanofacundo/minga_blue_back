@@ -19,6 +19,6 @@ let schema = new mongoose.Schema({
 
 let collection = 'authors';
 
-let author = mongoose.model(schema, collection);
+let author = mongoose.model(collection, schema);
 
 export default author;
