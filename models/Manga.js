@@ -8,8 +8,7 @@ let schema = new mongoose.Schema({
     },
     company_id: {
         type: mongoose.Types.ObjectId,
-        ref: 'companies',
-        required: true
+        ref: 'companies'
     },
     title: { type: String, required: true },
     cover_photo: { type: String, required: true },
