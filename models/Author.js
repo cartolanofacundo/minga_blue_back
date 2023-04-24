@@ -7,7 +7,11 @@ let schema = new mongoose.Schema({
     country: { type: String, required: true },
     date: { type: Date, required: false },
     photo: { type: String, required: true },
-    user_id: { type: String, required: true },
+    user_id: { 
+        type: mongoose.Types.ObjectId,
+        ref: 'users',
+        required: true
+     },
     active: { type: Boolean, required: true }
 }, {
     time_stamps: true
