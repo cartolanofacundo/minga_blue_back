@@ -14,7 +14,7 @@ let schema = new mongoose.Schema({
      },
     active: { type: Boolean, required: true }
 }, {
-    time_stamps: true
+    timestamps: true
 })
 
 let collection = 'authors';

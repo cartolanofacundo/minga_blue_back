@@ -9,7 +9,7 @@ let schema = new mongoose.Schema({
     is_verified: { type: Boolean, required: true },
     verify_code: { type: String, required: true }
 }, {
-    time_stamps: true
+    timestamps: true
 })
 
 let collection = 'users';

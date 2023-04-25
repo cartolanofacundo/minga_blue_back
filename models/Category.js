@@ -8,7 +8,7 @@ let schema = new mongoose.Schema({
     cover_photo: {type: String, required: true},
     character_photo: {type: String, required: true}
 }, {
-    time_stamps: true
+    timestamps: true
 })
 
 let collection = 'categories';

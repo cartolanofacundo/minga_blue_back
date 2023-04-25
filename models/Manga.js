@@ -19,7 +19,7 @@ let schema = new mongoose.Schema({
         required: true
     },
 }, {
-    time_stamps: true
+    timestamps: true
 })
 
 let collection = 'mangas';
