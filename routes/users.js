@@ -1,8 +1,7 @@
 import express from 'express'
+import read from '../controllers/users/read.js'
 const router = express.Router();
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
+router.get('/', read);
 export default router;
