@@ -11,7 +11,7 @@ let schema = new mongoose.Schema({
     pages: [{ type: String, required: true }],
     order: { type: Number, required: true }
 }, {
-    time_stamps: true
+    timestamps: true
 })
 
 let collection = 'chapters';
